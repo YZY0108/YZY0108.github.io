@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected quantitative research, machine learning, and systems projects by Yuan Zhiyi.">
+  <meta name="theme-color" content="#f3f1e9">
+  <title>Projects — Yuan Zhiyi</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="projects">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="Yuan Zhiyi, home"><span class="brand-mark" aria-hidden="true">YZ</span><span class="brand-copy">Yuan Zhiyi <small>Quant · ML</small></span></a>
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false"><span></span><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="work.html">Work</a><a href="projects.html" aria-current="page">Projects</a><a href="profile.html">Profile</a>
+        <a class="nav-github" href="https://github.com/YZY0108" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <button class="theme-toggle" type="button" aria-label="Switch color theme"><span class="theme-icon" aria-hidden="true">◐</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero shell reveal">
+      <p class="eyebrow">03 / PROJECTS</p>
+      <div class="page-title-grid">
+        <h1>Projects with a clear <em>question</em> and a visible result.</h1>
+        <div>
+          <p>A compact selection of public work. Each project is presented as a case: the problem, the design choice, and the outcome—not a wall of tools.</p>
+          <a class="text-link" href="https://github.com/YZY0108?tab=repositories" target="_blank" rel="noreferrer">Browse every public repository <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell project-section" aria-labelledby="project-list-heading">
+      <div class="project-toolbar reveal">
+        <h2 class="sr-only" id="project-list-heading">Selected projects</h2>
+        <p>FILTER BY FOCUS</p>
+        <div class="filter-group" role="group" aria-label="Filter projects">
+          <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter-button" data-filter="research" aria-pressed="false">Research</button>
+          <button type="button" class="filter-button" data-filter="ml" aria-pressed="false">ML</button>
+          <button type="button" class="filter-button" data-filter="systems" aria-pressed="false">Systems</button>
+        </div>
+      </div>
+
+      <div class="case-list">
+        <article class="case-card reveal" data-categories="research ml">
+          <div class="case-rail">
+            <span>CASE 01</span>
+            <span>2026</span>
+          </div>
+          <div class="case-main">
+            <div class="case-heading">
+              <div><p class="case-category">TRAJECTORY FORECASTING</p><h2>NFL Big Data Bowl 2026</h2></div>
+              <div class="result-badge"><strong>TOP 4.8%</strong><span>Silver medal</span></div>
+            </div>
+            <p class="case-lede">Can a learned trajectory model improve when the obvious geometry is made explicit?</p>
+            <div class="case-details">
+              <div><h3>Approach</h3><p>Start with role-aware geometric endpoints—receiver attraction, defender mirroring, and inertial motion—then learn the residual with a spatial-temporal Transformer.</p></div>
+              <div><h3>Validation</h3><p>10-fold GroupKFold by game, variable-length masks, Temporal Huber Loss, and a 10-model ensemble to reduce leakage and variance.</p></div>
+            </div>
+            <div class="case-footer">
+              <ul class="tag-list"><li>PyTorch</li><li>ST-Transformer</li><li>167-dim features</li><li>GroupKFold</li></ul>
+              <a class="button button-outline" href="https://github.com/YZY0108/nfl-player-trajectory-prediction" target="_blank" rel="noreferrer">Repository <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card reveal" data-categories="research ml">
+          <div class="case-rail"><span>CASE 02</span><span>2026</span></div>
+          <div class="case-main">
+            <div class="case-heading">
+              <div><p class="case-category">MACHINE LEARNING</p><h2>HKU COMP3314 Challenge</h2></div>
+              <div class="result-badge"><strong>3RD PLACE</strong><span>Course challenge</span></div>
+            </div>
+            <p class="case-lede">A repeatable experimentation pipeline for a large, GPU-intensive classification problem.</p>
+            <div class="case-details">
+              <div><h3>Approach</h3><p>Compare multiple feature and model strategies, including scattering-network representations, with a GPU notebook as the canonical training path.</p></div>
+              <div><h3>Workflow</h3><p>Separate deployment, log inspection, and result download scripts make remote experiments easier to repeat and compare.</p></div>
+            </div>
+            <div class="case-footer">
+              <ul class="tag-list"><li>PyTorch</li><li>Scattering nets</li><li>CUDA</li><li>Kaggle</li></ul>
+              <a class="button button-outline" href="https://github.com/YZY0108/COMP3314" target="_blank" rel="noreferrer">Repository <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card reveal" data-categories="systems">
+          <div class="case-rail"><span>CASE 03</span><span>2026</span></div>
+          <div class="case-main">
+            <div class="case-heading">
+              <div><p class="case-category">SOFTWARE SYSTEMS</p><h2>Labyrinth</h2></div>
+              <div class="result-badge"><strong>7 GAMES</strong><span>One engine</span></div>
+            </div>
+            <p class="case-lede">A text-based adventure that turns a course brief into a modular, extensible game system.</p>
+            <div class="case-details">
+              <div><h3>Architecture</h3><p>Polymorphic mini-games, RAII ownership, procedural maze generation, and clean header/implementation separation across 32 source files.</p></div>
+              <div><h3>Product</h3><p>Quick and custom game modes, five difficulty levels, persistent statistics, and seven independently playable mini-games.</p></div>
+            </div>
+            <div class="case-footer">
+              <ul class="tag-list"><li>C++17</li><li>OOP</li><li>RAII</li><li>Procedural generation</li></ul>
+              <a class="button button-outline" href="https://github.com/YZY0108/COMP2113GP" target="_blank" rel="noreferrer">Repository <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="empty-state" hidden>No project matches this filter yet.</p>
+    </section>
+
+    <section class="section shell compact-section">
+      <div class="repo-note reveal">
+        <span class="repo-note-mark">README.md</span>
+        <div><h2>What makes a repository useful?</h2><p>A quick start, an explicit problem, evidence for the result, and enough structure for someone else to reproduce the work. That standard now drives how these projects are presented here.</p></div>
+        <a class="text-link" href="https://github.com/YZY0108" target="_blank" rel="noreferrer">GitHub profile ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div><strong>Yuan Zhiyi</strong><span>Quantitative research · Machine learning</span></div>
+      <div class="footer-links"><a href="mailto:u3629247@connect.hku.hk">Email</a><a href="https://www.linkedin.com/in/zhiyi-yuan-a709a736b/" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/YZY0108" target="_blank" rel="noreferrer">GitHub</a></div>
+      <p>© <span data-year>2026</span> · Built with vanilla HTML, CSS &amp; JS.</p>
+    </div>
+  </footer>
+</body>
+</html>
