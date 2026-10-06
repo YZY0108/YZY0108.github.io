@@ -347,6 +347,12 @@ strong {
   white-space: nowrap;
   min-width: 65px;
   font-weight: 500;
+  flex-shrink: 0;
+}
+
+.news-text {
+  flex: 1;
+  min-width: 0;
 }
 
 /* ===== EXPERIENCE ===== */
